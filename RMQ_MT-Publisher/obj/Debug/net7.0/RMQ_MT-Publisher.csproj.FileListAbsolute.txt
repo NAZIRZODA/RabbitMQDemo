@@ -43,3 +43,4 @@ C:\Users\nazir\RiderProjects\RabbitMQDemo\RMQ_MT-Publisher\obj\Debug\net7.0\refi
 C:\Users\nazir\RiderProjects\RabbitMQDemo\RMQ_MT-Publisher\obj\Debug\net7.0\RMQ_MT-Publisher.pdb
 C:\Users\nazir\RiderProjects\RabbitMQDemo\RMQ_MT-Publisher\obj\Debug\net7.0\RMQ_MT-Publisher.genruntimeconfig.cache
 C:\Users\nazir\RiderProjects\RabbitMQDemo\RMQ_MT-Publisher\obj\Debug\net7.0\ref\RMQ_MT-Publisher.dll
+C:\Users\nazir\RiderProjects\RabbitMQDemo\RMQ_MT-Publisher\obj\Debug\net7.0\RMQ_MT-Publisher.sourcelink.json
