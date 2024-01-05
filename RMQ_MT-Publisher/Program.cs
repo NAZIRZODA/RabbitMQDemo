@@ -9,7 +9,7 @@ builder.Services.AddMassTransit(i =>
 {
     i.UsingRabbitMq((ctx, cfg) =>
     {
-        cfg.Host(new Uri(builder.Configuration["EventBus:ConnectionString"]), hostConfig =>
+        cfg.Host(new Uri(builder.Configuration["EventBus:ConnectionString"]!), hostConfig =>
         {
             hostConfig.Username(builder.Configuration["EventBus.Username"]);
             hostConfig.Password(builder.Configuration["EventBus.Password"]);
@@ -26,7 +26,11 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwaggerUI(c =>
+    {
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "RMQ_MT-Demo V1");
+        c.RoutePrefix = string.Empty;
+    });
 }
 
 app.UseHttpsRedirection();
