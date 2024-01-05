@@ -1,0 +1,20 @@
+﻿FROM mcr.microsoft.com/dotnet/aspnet:7.0 AS base
+WORKDIR /app
+EXPOSE 80
+EXPOSE 443
+
+FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
+WORKDIR /src
+COPY ["RMQ_MT-Consumer/RMQ_MT-Consumer.csproj", "RMQ_MT-Consumer/"]
+RUN dotnet restore "RMQ_MT-Consumer/RMQ_MT-Consumer.csproj"
+COPY . .
+WORKDIR "/src/RMQ_MT-Consumer"
+RUN dotnet build "RMQ_MT-Consumer.csproj" -c Release -o /app/build
+
+FROM build AS publish
+RUN dotnet publish "RMQ_MT-Consumer.csproj" -c Release -o /app/publish /p:UseAppHost=false
+
+FROM base AS final
+WORKDIR /app
+COPY --from=publish /app/publish .
+ENTRYPOINT ["dotnet", "RMQ_MT-Consumer.dll"]

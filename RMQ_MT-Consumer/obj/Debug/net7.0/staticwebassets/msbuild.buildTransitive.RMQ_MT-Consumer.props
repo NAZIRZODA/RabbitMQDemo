@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\RMQ_MT-Consumer.props" />
+</Project>

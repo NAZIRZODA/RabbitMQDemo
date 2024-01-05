@@ -1,0 +1,19 @@
+# This is a generated file. Not intended for manual editing.
+version: "3.9"
+services:
+  RMQ_MT-Consumer:
+    build:
+      context: "C:\\Users\\nazir\\RiderProjects\\RabbitMQDemo"
+      dockerfile: "RMQ_MT-Publisher/DockerFile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net7.0/RMQ_MT-Publisher.dll"
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
+    image: "rmq_mt-publisher:dev"
+    ports: []
+    volumes:
+    - "C:\\Users\\nazir\\RiderProjects\\RabbitMQDemo\\RMQ_MT-Publisher:/app:rw"
+    working_dir: "/app"

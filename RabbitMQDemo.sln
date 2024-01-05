@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitSender", "RabbitSender\RabbitSender.csproj", "{128C7CB1-B076-46A2-B989-540957C2E60F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitReceiver1", "RabbitReceiver1\RabbitReceiver1.csproj", "{723D4D78-4E48-460F-BD16-2E784A3DF479}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitReceiver2", "RabbitReceiver2\RabbitReceiver2.csproj", "{BEA3901D-9C52-47F6-AF51-50C1B4079C71}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RabbitMQ", "RabbitMQ", "{D3B30F8A-9A4C-402A-A2F3-91521E811523}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RabbitMQ-MassTransit", "RabbitMQ-MassTransit", "{D53B2878-E294-423C-BB84-E25D048D8B5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RMQ_MT-Publisher", "RMQ_MT-Publisher\RMQ_MT-Publisher.csproj", "{045C0D93-F8D2-4E7D-A6D6-9B2236720771}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RMQ_MT-Consumer", "RMQ_MT-Consumer\RMQ_MT-Consumer.csproj", "{2DAD6DD6-0FC3-423D-A77A-8A5B581EA852}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{30843543-B270-4636-8117-EFDC44C462D3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docker", "Docker", "{5923B7B6-0367-49A3-84E3-C5ABB2B2A67C}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+		DockerCmd.txt = DockerCmd.txt
+		DockerfileConsumer = DockerfileConsumer
+		DockerfilePublisher = DockerfilePublisher
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{128C7CB1-B076-46A2-B989-540957C2E60F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{128C7CB1-B076-46A2-B989-540957C2E60F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{128C7CB1-B076-46A2-B989-540957C2E60F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{128C7CB1-B076-46A2-B989-540957C2E60F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{723D4D78-4E48-460F-BD16-2E784A3DF479}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{723D4D78-4E48-460F-BD16-2E784A3DF479}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{723D4D78-4E48-460F-BD16-2E784A3DF479}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{723D4D78-4E48-460F-BD16-2E784A3DF479}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEA3901D-9C52-47F6-AF51-50C1B4079C71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEA3901D-9C52-47F6-AF51-50C1B4079C71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEA3901D-9C52-47F6-AF51-50C1B4079C71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEA3901D-9C52-47F6-AF51-50C1B4079C71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{045C0D93-F8D2-4E7D-A6D6-9B2236720771}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{045C0D93-F8D2-4E7D-A6D6-9B2236720771}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{045C0D93-F8D2-4E7D-A6D6-9B2236720771}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{045C0D93-F8D2-4E7D-A6D6-9B2236720771}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DAD6DD6-0FC3-423D-A77A-8A5B581EA852}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DAD6DD6-0FC3-423D-A77A-8A5B581EA852}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DAD6DD6-0FC3-423D-A77A-8A5B581EA852}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DAD6DD6-0FC3-423D-A77A-8A5B581EA852}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30843543-B270-4636-8117-EFDC44C462D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30843543-B270-4636-8117-EFDC44C462D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30843543-B270-4636-8117-EFDC44C462D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30843543-B270-4636-8117-EFDC44C462D3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{723D4D78-4E48-460F-BD16-2E784A3DF479} = {D3B30F8A-9A4C-402A-A2F3-91521E811523}
+		{BEA3901D-9C52-47F6-AF51-50C1B4079C71} = {D3B30F8A-9A4C-402A-A2F3-91521E811523}
+		{128C7CB1-B076-46A2-B989-540957C2E60F} = {D3B30F8A-9A4C-402A-A2F3-91521E811523}
+		{045C0D93-F8D2-4E7D-A6D6-9B2236720771} = {D53B2878-E294-423C-BB84-E25D048D8B5A}
+		{2DAD6DD6-0FC3-423D-A77A-8A5B581EA852} = {D53B2878-E294-423C-BB84-E25D048D8B5A}
+		{30843543-B270-4636-8117-EFDC44C462D3} = {D53B2878-E294-423C-BB84-E25D048D8B5A}
+	EndGlobalSection
+EndGlobal

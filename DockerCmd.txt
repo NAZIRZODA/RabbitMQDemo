@@ -1,0 +1,1 @@
+Deploy to docker -> docker-compose up --build
