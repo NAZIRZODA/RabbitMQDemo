@@ -1,8 +1,27 @@
+using MassTransit;
+using RabbitMQ.Client;
+using RMQ_MT_Consumer;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddControllers();
+
+builder.Services.AddMassTransit(e =>
+{
+    e.AddConsumer<OrderConsumer>();
+    e.UsingRabbitMq((ctx, cfg) =>
+    {
+        cfg.Host(new Uri(builder.Configuration["EventBus:ConnectionString"]!));
+        cfg.ExchangeType = ExchangeType.Fanout;
+        cfg.ReceiveEndpoint("order-queue", c =>
+        {
+            c.Consumer<OrderConsumer>();
+        });
+    });
+});
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
