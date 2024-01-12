@@ -31,3 +31,16 @@ C:\Users\nazir\RiderProjects\RabbitMQDemo\RMQ_MT-Consumer\obj\Debug\net7.0\refin
 C:\Users\nazir\RiderProjects\RabbitMQDemo\RMQ_MT-Consumer\obj\Debug\net7.0\RMQ_MT-Consumer.pdb
 C:\Users\nazir\RiderProjects\RabbitMQDemo\RMQ_MT-Consumer\obj\Debug\net7.0\RMQ_MT-Consumer.genruntimeconfig.cache
 C:\Users\nazir\RiderProjects\RabbitMQDemo\RMQ_MT-Consumer\obj\Debug\net7.0\ref\RMQ_MT-Consumer.dll
+C:\Users\nazir\RiderProjects\RabbitMQDemo\RMQ_MT-Consumer\bin\Debug\net7.0\Domain.deps.json
+C:\Users\nazir\RiderProjects\RabbitMQDemo\RMQ_MT-Consumer\bin\Debug\net7.0\Domain.runtimeconfig.json
+C:\Users\nazir\RiderProjects\RabbitMQDemo\RMQ_MT-Consumer\bin\Debug\net7.0\Domain.exe
+C:\Users\nazir\RiderProjects\RabbitMQDemo\RMQ_MT-Consumer\bin\Debug\net7.0\MassTransit.dll
+C:\Users\nazir\RiderProjects\RabbitMQDemo\RMQ_MT-Consumer\bin\Debug\net7.0\MassTransit.Abstractions.dll
+C:\Users\nazir\RiderProjects\RabbitMQDemo\RMQ_MT-Consumer\bin\Debug\net7.0\MassTransit.AspNetCoreIntegration.dll
+C:\Users\nazir\RiderProjects\RabbitMQDemo\RMQ_MT-Consumer\bin\Debug\net7.0\MassTransit.ExtensionsDependencyInjectionIntegration.dll
+C:\Users\nazir\RiderProjects\RabbitMQDemo\RMQ_MT-Consumer\bin\Debug\net7.0\MassTransit.RabbitMqTransport.dll
+C:\Users\nazir\RiderProjects\RabbitMQDemo\RMQ_MT-Consumer\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\nazir\RiderProjects\RabbitMQDemo\RMQ_MT-Consumer\bin\Debug\net7.0\RabbitMQ.Client.dll
+C:\Users\nazir\RiderProjects\RabbitMQDemo\RMQ_MT-Consumer\bin\Debug\net7.0\Domain.dll
+C:\Users\nazir\RiderProjects\RabbitMQDemo\RMQ_MT-Consumer\bin\Debug\net7.0\Domain.pdb
+C:\Users\nazir\RiderProjects\RabbitMQDemo\RMQ_MT-Consumer\obj\Debug\net7.0\RMQ_MT-Consumer.sourcelink.json

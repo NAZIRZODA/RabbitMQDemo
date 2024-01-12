@@ -15,3 +15,4 @@ C:\Users\nazir\RiderProjects\RabbitMQDemo\RabbitSender\obj\Debug\net7.0\refint\R
 C:\Users\nazir\RiderProjects\RabbitMQDemo\RabbitSender\obj\Debug\net7.0\RabbitSender.pdb
 C:\Users\nazir\RiderProjects\RabbitMQDemo\RabbitSender\obj\Debug\net7.0\RabbitSender.genruntimeconfig.cache
 C:\Users\nazir\RiderProjects\RabbitMQDemo\RabbitSender\obj\Debug\net7.0\ref\RabbitSender.dll
+C:\Users\nazir\RiderProjects\RabbitMQDemo\RabbitSender\obj\Debug\net7.0\RabbitSender.sourcelink.json
